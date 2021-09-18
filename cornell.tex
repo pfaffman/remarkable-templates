@@ -28,9 +28,10 @@
 \begin{center}
 \begin{tikzpicture}
 
+% put lines in the large right "notes" section
+
 \foreach \i in {0,60,...,1450}{
   \draw[lightgray] (\cuewd,\summht +\i) -- (\wholeboxwd,\summht +\i) ;
-
 }
 
 % ($(current page.north west)+(0,-\i)$) -- ($(current page.north east)+(0,-\i)$);
@@ -47,6 +48,8 @@
 \draw [line width=.2pt] (\cuewd,\summht) -- (\cuewd,\wholeboxht);
 % Draw the big box:
 \draw (\xorig,\yorig) rectangle (\wholeboxwd,\wholeboxht);
+
+% put lines in the bottom "to do" section.
 \foreach \i in {0,50,...,200}{
 \draw(\xorig,\yorig+\i) -- (\wholeboxwd / 2.05, \yorig+\i);
 \draw(\wholeboxwd-\wholeboxwd/2.05 ,\yorig+\i) -- (\wholeboxwd , \yorig+\i);
