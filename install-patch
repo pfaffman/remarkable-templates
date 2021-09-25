@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Install remarkable-hacks and remarkable-stylus plugin (for Lamy stylus)
+
+# See https://github.com/ddvk/remarkable-hacks
+# This can't be scripted because automagic installer is interactive
+echo do the following to install
+echo 
+echo ssh remarkable
+echo sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O-)" 
+echo sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-stylus/master/patch.sh -O-)" 
+
+
+# See https://github.com/ddvk/remarkable-stylus
+# Looks like this can be scripted but why bother when the other can't
+#ssh remarkable sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-stylus/master/patch.sh -O-)" 
+
