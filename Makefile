@@ -1,11 +1,12 @@
 CONVERT=convert
 PDF2SVG=pdf2svg
+CONVERT_SWITCHES=-background white -alpha remove -flatten -alpha off 
 
 %.pdf: %.tex
 	pdflatex $<
 
-%.png: %.pdf $(DEPS)
-	$(CONVERT)  $< $@
+%.png: %.pdf 
+	$(CONVERT) $<  $(CONVERT_SWITCHES) $@ 
 
 %.svg: %.pdf
 	pdf2svg $< $@
