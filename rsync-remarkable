@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+rsync -v cornell.png cornell.svg remarkable:/usr/share/remarkable/templates
+ssh remarkable systemctl restart xochitl
