@@ -1,4 +1,4 @@
-CONVERT=convert
+CONVERT=magick
 PDF2SVG=pdf2svg
 CONVERT_SWITCHES=-background white -alpha remove -flatten -alpha off 
 
